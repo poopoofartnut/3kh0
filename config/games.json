@@ -1,5 +1,10 @@
 [
   {
+    "link": "projects/nzp/index.html",
+    "imgSrc": "https://github.com/poopoofartnut/nz-portable/blob/0f3e5ca8bf83d3d5ff735fe17540ed11c9e80654/nzportable.ico",
+    "title": "NZ: portable"
+  },
+  {
     "link": "projects/1/index.html",
     "imgSrc": "projects/1/meta/apple-touch-icon.png",
     "title": "1"
