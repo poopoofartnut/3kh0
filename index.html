@@ -13,6 +13,7 @@
     <link rel="icon" href="/favicon.ico" />
     <link rel="shortcut-icon" href="/favicon.ico" />
     <script src="/js/main.js"></script>
+    
     <style>
       p {
         text-align: center;
@@ -77,6 +78,58 @@
       }
     </style>
   </head>
+  <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <style>
+        body {
+            text-align: center;
+            height: 100vh;
+            margin: 0;
+            align-items: center;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        .cont {
+            margin-top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <script>
+        function showPopup() {
+            swal({
+                title: "Try the new site",
+                text: "Try the new site, same games new UI",
+                showCloseButton: true,
+                buttons: ["No, keep using 3kh0", "Take me there!"],
+                icon: 'info'
+            }).then((skibidi) => {
+              if(skibidi){
+                window.open('https://poopoofartnut.github.io/ppfn', "_self")
+              }
+            });
+        }
+        showPopup()
+    </script>
   <body style="background-color: #121212; color: #ffffff; font-family: sans-serif; text-decoration: none; text-align: center;">
     <h1 style="font-size: 3em; text-align: center;">Projects</h1>
     <input type="text" id="search" onkeyup="searchGames()" placeholder="Search for games..." style="width: 100%; font-size: 18px; padding: 6px 20px; margin: auto; border-radius: 30px; max-width: 600px; margin-bottom: 10px;" />
